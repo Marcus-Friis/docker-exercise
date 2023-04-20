@@ -1,0 +1,12 @@
+<h1>
+    Give sentence you want analysed
+</h1>
+<form method="post">
+  input: <input name="sentence"/>
+  <br/><br/>
+  <button type="submit">Submit</button>
+</form>
+
+{% if show_results %}
+    {{sentiment}}
+{% endif %}

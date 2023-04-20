@@ -1,0 +1,11 @@
+services:
+  webserver:
+    container_name: my_frontend
+    expose: ["5000"]
+    build: ./frontend
+    ports: ["8000:5000"]
+  backend:
+    container_name: my_backend
+    expose: ["5000"]
+    build: ./backend
+    ports: ["7000:5000"]
