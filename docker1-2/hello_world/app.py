@@ -1,8 +1,8 @@
 from flask import Flask
 import os
 
-host = os.environ.get('FLASK_HOST')
-port = int(os.environ.get('FLASK_PORT'))
+host = os.environ.get('FLASK_HOST', '0.0.0.0')
+port = int(os.environ.get('FLASK_PORT', 5000))
 
 app = Flask(__name__)
 
